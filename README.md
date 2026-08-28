@@ -14,7 +14,7 @@ Whichever value is found first is validated and stored in the `adfuid` first-par
 
 ## Setup Instructions
 
-1. **Import** the template from the Community Template Gallery into your GTM Web workspace.
+1. **Import** the template from the Community Template Gallery or manually using the [template.tpl](./template.tpl) file into your GTM Web workspace.
 2. **Create** a new tag using the _Adform Cookie Retrieval Script_ template.
 3. **Configure** the Cookie Settings (optional):
    - **Cookie Domain** - the domain the `adfuid` cookie is written to. Defaults to `auto`, letting the browser determine it.
