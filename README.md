@@ -12,9 +12,6 @@ When the tag fires, it looks for the Adform cookie ID in the following order and
 
 Whichever value is found first is validated and stored in the `adfuid` first-party cookie using the domain, `SameSite`, and expiration settings configured on the tag.
 
-> [!IMPORTANT]
-> The Adform serving script does not set a cookie itself - it only exposes the ID on `window.Adform._uid`. Because of this, it's common practice to fire a tag that hits an Adform tracking point (e.g. a PageView) before this tag runs, so that Adform has already set its own cookie for this script to pick up.
-
 ## Setup Instructions
 
 1. **Import** the template from the Community Template Gallery into your GTM Web workspace.
@@ -23,7 +20,7 @@ Whichever value is found first is validated and stored in the `adfuid` first-par
    - **Cookie Domain** - the domain the `adfuid` cookie is written to. Defaults to `auto`, letting the browser determine it.
    - **Cookie SameSite** - the `SameSite` attribute for the `adfuid` cookie. Defaults to `None`.
    - **Cookie Expiration** - how long, in days, the `adfuid` cookie is kept. Defaults to `60`.
-4. **Assign** a trigger that fires after the user has an Adform cookie set (see the note above).
+4. **Assign** a trigger that fires on page load (Container Initialization, All Pages, DOM Ready). Make sure to adhere to your consent management.
 
 ## Useful Resources
 
