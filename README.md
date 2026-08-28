@@ -8,7 +8,7 @@ When the tag fires, it looks for the Adform cookie ID in the following order and
 
 1. **URL / referrer parameter** - checks the current page URL and the referrer URL for an `adfcookieid` query parameter.
 2. **Existing first-party cookie** - checks whether an `adfuid` cookie is already set in the browser.
-3. **Adform's serving script** - injects Adform's cookie serving script (`track.adform.net/Serving/Cookie`) and reads the ID it assigns to `window.Adform._uid`.
+3. **Adform's serving script** - injects Adform's cookie serving script (`track.adform.net/Serving/Cookie`) and reads the ID it assigns to `window.Adform._uid`. Most useful for view-throught conversions, when the [Adform Tag for sGTM](https://github.com/stape-io/adform-tag) cannot capture the Cookie ID.
 
 Whichever value is found first is validated and stored in the `adfuid` first-party cookie using the domain, `SameSite`, and expiration settings configured on the tag.
 
