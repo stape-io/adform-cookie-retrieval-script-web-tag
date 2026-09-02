@@ -1,5 +1,7 @@
 homepage: 'https://stape.io/'
 documentation: 'https://github.com/stape-io/adform-cookie-retrieval-script-web-tag'
 versions:
+  - sha: b27c6fefec1c00974e9e68bd75994a561bbe462c
+    changeNotes: Update template name.
   - sha: 7827abe8b3bc1cd8ac5bc95ecbecbf47bdff177f
     changeNotes: Initial release.
