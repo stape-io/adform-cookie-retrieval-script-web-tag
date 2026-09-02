@@ -13,7 +13,7 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "Adform Cookie Retrieval Script",
+  "displayName": "Adform Cookie Retrieval Script by Stape",
   "brand": {
     "id": "brand_dummy",
     "displayName": "stape.io",
